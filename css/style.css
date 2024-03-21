@@ -94,12 +94,64 @@ img {
 
 /*  */
 
+/* HERO */
+
+.hero {
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/office.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 72px 0;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 216px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  display: block;
+  min-width: 169px;
+  padding: 16px 32px;
+  margin: 72px auto 0 auto;
+  border-radius: 4px;
+  background: #4d5ae5;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover {
+  background-color: #404bbf;
+}
+
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
 /** ==================================================================MEDIA============================================== */
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  /**======================header=====================*/
 
   .logo {
     margin-right: 120px;
@@ -171,6 +223,23 @@ img {
   .open-menu-btn {
     display: none;
   }
+
+  /**======================hero=====================*/
+
+  .hero {
+    width: 100%;
+    padding: 112px 0;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .hero-btn {
+    margin: 36px auto 0 auto;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -178,6 +247,8 @@ img {
     max-width: 1158px;
     padding: 0 15px;
   }
+
+  /**======================header=====================*/
 
   .logo {
     margin-right: 76px;
@@ -192,57 +263,24 @@ img {
     font-size: 16px;
     line-height: 1.5;
   }
-}
 
-/* HERO */
+  /**======================hero=====================*/
 
-.hero {
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/office.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1440px;
-  height: 600px;
-  padding: 188px 0;
-  margin: 0 auto;
-}
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
 
-.hero-title {
-  margin: 0 auto;
-  max-width: 496px;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-}
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    max-height: 600px;
+  }
 
-.hero-btn {
-  display: block;
-  min-width: 169px;
-  padding: 16px 32px;
-  margin: 48px auto 0 auto;
-  border-radius: 4px;
-  background: #4d5ae5;
-  border: none;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover {
-  background-color: #404bbf;
-}
-
-.hero-btn:focus {
-  background-color: #404bbf;
+  .hero-btn {
+    margin: 48px auto 0 auto;
+  }
 }
 
 /* our advanteges */
