@@ -305,9 +305,9 @@ img {
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  /* flex-wrap: wrap; */
+  /* column-gap: 24px; */
+  row-gap: 72px;
 }
 .portfolio-list > li:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -655,6 +655,8 @@ img {
   .portfolio-list {
     flex-direction: row;
     row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
   }
 
   .portfolio-item {
