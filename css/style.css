@@ -907,8 +907,7 @@ img {
   }
 
   .footer-wrapper {
-    justify-content: center;
-    gap: 72px;
+    justify-content: space-between;
   }
 
   .social-media-link:hover {
