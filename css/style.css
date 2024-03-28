@@ -33,6 +33,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .header {
@@ -95,39 +97,45 @@ img {
 /* **++++++++++++++++++++++mobile menu++++++++++++++++++++++ */
 .mobile-menu {
   background-color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
   padding-top: 72px;
   padding-bottom: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .visible-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  display: block;
 }
 
 .mobile-menu-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   width: 24px;
   height: 24px;
   border-radius: 100%;
   border: 1px solid #e7e9fc;
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  /* margin-left: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 .mobile-menu-nav-link {
   font-size: 36px;
@@ -179,12 +187,20 @@ img {
 
 .hero {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/office.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+    url('../images/office-mob.jpg');
   background-position: center;
   padding: 72px 0;
   margin: 0 auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/office-mob-2x.jpg');
+    background-size: cover;
+  }
 }
 
 .hero-title {
@@ -696,8 +712,19 @@ img {
   /**======================hero=====================*/
 
   .hero {
-    width: 100%;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/office-tab.jpg');
+
     padding: 112px 0;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/office-tab-2x.jpg');
+      background-size: cover;
+    }
   }
 
   .hero-title {
@@ -810,8 +837,22 @@ img {
   /**======================hero=====================*/
 
   .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/office.jpg');
     max-width: 1440px;
     padding: 188px 0;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/office-2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .hero-title {
@@ -860,8 +901,6 @@ img {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-  }
-  .advanteges-descr {
   }
 
   /**======================Our team=====================*/
