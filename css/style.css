@@ -111,7 +111,7 @@ img {
   justify-content: space-between;
 }
 
-.visible-menu {
+.visible {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -125,7 +125,6 @@ img {
   height: 24px;
   border-radius: 100%;
   border: 1px solid #e7e9fc;
-  /* margin-left: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,9 +261,6 @@ img {
   display: none;
 }
 
-.advanteges-item {
-}
-
 .advanteges-list {
   display: flex;
   flex-direction: column;
@@ -295,7 +291,6 @@ img {
 .our-team {
   padding-top: 96px;
   padding-bottom: 96px;
-  /*  */
 }
 
 .our-team-title {
@@ -312,7 +307,6 @@ img {
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
 }
 
@@ -393,17 +387,12 @@ img {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 96px;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 
 .portfolio-list {
   margin-top: 72px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  /* flex-wrap: wrap; */
-  /* column-gap: 24px; */
   row-gap: 72px;
 }
 .portfolio-list > li:hover {
@@ -417,7 +406,6 @@ img {
 
 .portfolio-item {
   width: 100%;
-  /* width: calc((100% - 48px) / 3); */
 }
 
 .portfolio-item:hover .portfolio-item-img p {
@@ -496,7 +484,6 @@ img {
 
 .footer-wrapper {
   display: flex;
-  /* align-items: baseline; */
   flex-direction: column;
   align-items: center;
   gap: 72px;
@@ -504,7 +491,6 @@ img {
 
 .footer-container {
   text-align: center;
-  /* margin-right: 120px; */
 }
 
 .footer-logo {
@@ -587,7 +573,6 @@ img {
 .form-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  /* width: 264px; */
   width: 288px;
   height: 40px;
   background-color: transparent;
@@ -625,336 +610,7 @@ img {
   margin-left: 16px;
 }
 
-/** ==================================================================MEDIA============================================== */
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  /**======================header=====================*/
-
-  .logo {
-    margin-right: 120px;
-  }
-
-  .nav-menu {
-    display: flex;
-    gap: 40px;
-  }
-
-  .nav-link {
-    position: relative;
-    padding: 24px 0;
-    color: #2e2f42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
-
-  .nav-menu li:first-child a {
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-menu li:first-child a::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-  }
-
-  .nav-link:active {
-    color: #404bbf;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
-  }
-
-  .address {
-    display: block;
-  }
-
-  .address-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .address-link {
-    color: #434455;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .address-link:hover,
-  .address-link:focus {
-    color: #404bbf;
-  }
-
-  .open-menu-btn {
-    display: none;
-  }
-
-  /**======================hero=====================*/
-
-  .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/office-tab.jpg');
-
-    padding: 112px 0;
-  }
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/office-tab-2x.jpg');
-      background-size: cover;
-    }
-  }
-
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
-  }
-
-  .hero-btn {
-    margin: 36px auto 0 auto;
-  }
-
-  /**======================advanteges=====================*/
-
-  .advanteges {
-  }
-  .advanteges-list {
-    flex-direction: row;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .advanteges-item {
-    width: calc((100% - 24px) / 2);
-    /* max-width: 356px; */
-  }
-  .advanteges-icon-box {
-  }
-  .advanteges-icon {
-  }
-  .advanteges-item-title {
-    text-align: left;
-  }
-  .advanteges-descr {
-  }
-
-  /**======================Our team=====================*/
-  .our-team .container {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
-  .our-team-list {
-    gap: 24px;
-  }
-
-  /** ===============Our portfolio=================== **/
-
-  .portfolio-list {
-    flex-direction: row;
-    row-gap: 72px;
-    column-gap: 24px;
-    flex-wrap: wrap;
-  }
-
-  .portfolio-item {
-    width: calc((100% - 24px) / 2);
-  }
-
-  /** ===============Footer=================== **/
-  .footer .container {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
-  .footer-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-
-  .form-container {
-    margin-left: 0;
-  }
-
-  .footer-container,
-  .social-media-descr,
-  .form-title {
-    text-align: left;
-  }
-
-  .form-input {
-    width: 264px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-
-  /**======================header=====================*/
-
-  .logo {
-    margin-right: 76px;
-  }
-
-  .address-menu {
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .address-link {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  /**======================hero=====================*/
-
-  .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/office.jpg');
-    max-width: 1440px;
-    padding: 188px 0;
-  }
-
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/office-2x.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  }
-
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
-    max-height: 600px;
-  }
-
-  .hero-btn {
-    margin: 48px auto 0 auto;
-  }
-
-  /**======================advanteges=====================*/
-
-  .advanteges {
-    padding: 120px 0;
-  }
-  .advanteges-list {
-    display: flex;
-    gap: 24px;
-  }
-  .advanteges-item {
-    width: calc((100% - 72px) / 4);
-  }
-  .advanteges-icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background-color: #f4f4fd;
-    margin-bottom: 8px;
-  }
-
-  .advanteges-icon {
-    display: block;
-    margin: 20px auto;
-    width: 64px;
-    height: 64px;
-  }
-
-  .advanteges-item-title {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-
-  /**======================Our team=====================*/
-  .our-team {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .our-team .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .our-team-list {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .team-link:hover {
-    background-color: #404bbf;
-  }
-
-  /** ===============Our portfolio=================== **/
-
-  .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .portfolio-list {
-    row-gap: 48px;
-  }
-
-  .portfolio-item {
-    width: calc((100% - 48px) / 3);
-  }
-
-  /** ===============Footer=================== **/
-
-  .footer .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .footer-wrapper {
-    justify-content: space-between;
-  }
-
-  .social-media-link:hover {
-    background-color: #31d0aa;
-  }
-}
-
-/** MODAL */
+/**============================ MODAL===================== */
 
 .modal-container {
   position: fixed;
@@ -965,14 +621,24 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  transform: translate(-50%, -65%) scale(1);
+  /* width: 408px; */
+  min-width: 288px;
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -1141,4 +807,316 @@ img {
   padding: 16px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/** ==================================================================MEDIA============================================== */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 24px 0;
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-menu li:first-child a {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-menu li:first-child a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+
+  .nav-link:active {
+    color: #404bbf;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .address {
+    display: block;
+  }
+
+  .address-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link {
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+
+  .open-menu-btn {
+    display: none;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/office-tab.jpg');
+
+    padding: 112px 0;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/office-tab-2x.jpg');
+      background-size: cover;
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .hero-btn {
+    margin: 36px auto 0 auto;
+  }
+
+  .advanteges-list {
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .advanteges-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advanteges-item-title {
+    text-align: left;
+  }
+
+  .our-team .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .our-team-list {
+    gap: 24px;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .footer .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .form-container {
+    margin-left: 0;
+  }
+
+  .footer-container,
+  .social-media-descr,
+  .form-title {
+    text-align: left;
+  }
+
+  .form-input {
+    width: 264px;
+  }
+
+  .modal {
+    transform: translate(-50%, -55%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .address-menu {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/office.jpg');
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/office-2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    max-height: 600px;
+  }
+
+  .hero-btn {
+    margin: 48px auto 0 auto;
+  }
+
+  .advanteges {
+    padding: 120px 0;
+  }
+
+  .advanteges-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .advanteges-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advanteges-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .advanteges-icon {
+    display: block;
+    margin: 20px auto;
+    width: 64px;
+    height: 64px;
+  }
+
+  .advanteges-item-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .our-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .our-team .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .our-team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team-link:hover {
+    background-color: #404bbf;
+  }
+
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-wrapper {
+    justify-content: space-between;
+  }
+
+  .social-media-link:hover {
+    background-color: #31d0aa;
+  }
+
+  .modal {
+    transform: translate(-50%, -60%) scale(1);
+  }
 }
