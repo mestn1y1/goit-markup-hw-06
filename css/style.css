@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --svg-color: #f4f4fd;
   --some-text-color: #ffffff;
@@ -8,7 +11,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -108,6 +111,7 @@ img {
   justify-content: space-between;
   transform: translateX(100%);
   transition: transform 250ms;
+  z-index: 999;
 }
 
 .is-open {
@@ -192,7 +196,7 @@ img {
 
 .hero {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/office-mob.jpg');
+    url("../images/office-mob.jpg");
   background-position: center;
   padding: 72px 0;
   margin: 0 auto;
@@ -203,7 +207,7 @@ img {
   (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/office-mob-2x.jpg');
+      url("../images/office-mob-2x.jpg");
     background-size: cover;
   }
 }
@@ -229,7 +233,7 @@ img {
   background: #4d5ae5;
   border: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -316,7 +320,7 @@ img {
   gap: 72px;
 }
 
-.our-team-list > li:first-child {
+.our-team-box:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -604,7 +608,7 @@ footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -805,7 +809,7 @@ footer .logo {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -849,20 +853,23 @@ footer .logo {
     letter-spacing: 0.02em;
   }
 
-  .nav-menu li:first-child a {
-    color: #404bbf;
+  .nav-menu li a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-menu li:first-child a::after {
-    content: '';
-    width: 100%;
+  .nav-menu li a::after {
+    content: "";
+    width: 0;
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+  }
+
+  .nav-menu li a:hover::after {
+    width: 100%;
   }
 
   .nav-link:active {
@@ -903,7 +910,7 @@ footer .logo {
 
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/office-tab.jpg');
+      url("../images/office-tab.jpg");
 
     padding: 112px 0;
   }
@@ -913,7 +920,7 @@ footer .logo {
     (min-resolution: 2dppx) {
     .hero {
       background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/office-tab-2x.jpg');
+        url("../images/office-tab-2x.jpg");
       background-size: cover;
     }
   }
@@ -1011,7 +1018,7 @@ footer .logo {
 
   .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/office.jpg');
+      url("../images/office.jpg");
     max-width: 1440px;
     padding: 188px 0;
   }
@@ -1021,7 +1028,7 @@ footer .logo {
     (min-resolution: 2dppx) {
     .hero {
       background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/office-2x.jpg');
+        url("../images/office-2x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
